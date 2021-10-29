@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Demo
+    </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label>Full Name*</label><label class="validation-error hide" id="fullNameValidationError">This field is required.</label>
+                        <input type="text" name="fullName" id="fullName">
+                    </div>
+                    <div>
+                        <label>EMP Code</label>
+                        <input type="text" name="empCode" id="empCode">
+                    </div>
+                    <div>
+                        <label>Mobile Number</label>
+                        <input type="mobilenumber" name="mobile" id="mobile">
+                    </div>
+                    <div>
+                        <label>Salary</label>
+                        <input type="text" name="salary" id="salary">
+                    </div>
+                    <div>
+                        <label>City</label>
+                        <select name="city" id="city">
+                              <option>junagdh</option>
+                              <option>rajkot</option>
+                              <option>surat</option>
+                              <option>vadodra</option>
+                        </select>
+ 
+                    </div>
+                    <div>
+                        <h2>Hobbies</h2>
+                        <label> reading </label>
+                        <input type="checkbox" name="reading" value="Reading" id="hobbies">
+                        <label> writing </label>
+                        <input type="checkbox" name="writing" value="Writing" id="hobbies">
+                       
+                    </div>
+                   
+                    <div>
+                        <h2>Gender</h2>
+                        <label>Male</label>
+                        <input type="radio" name="male" value="Male" id="gender">
+                        <label>Female</label>
+                        <input type="radio" name="female" value="Female" id="gender">
+                    </div>
+                    <div>
+                        <label>Date</label>
+                        <input type="date" name="date" value="date" id="date">
+                    </div>
+                    <div  class="form-action-buttons">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </td>
+            <td>
+                <table class="list" id="employeeList">
+                    <thead>
+                        <tr>
+                            <th>Full Name</th>
+                            <th>EMP Code</th>
+                            <th>Salary</th>
+                            <th>City</th>
+                            <th>Gender</th>
+                            <th>Mobile number</th>
+                            <th>Hobbies</th>
+                            <th>Date</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <script src="script.js"></script>
+</body>
+
+</html>
